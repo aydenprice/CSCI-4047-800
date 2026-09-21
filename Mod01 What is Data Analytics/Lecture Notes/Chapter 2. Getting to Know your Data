@@ -1,0 +1,112 @@
+// Data Objects 
+
+- Data sets hold things called data objects 
+    - This is essentially an entity (a row, record, entry) in your table 
+    - These are described by certain attributes / characteristics 
+    - It goes from rows -> objects -> columns (attributes)
+
+// Attributes 
+
+- An attribute (aka dimensions, features, variables) are data fields that represent a characteristic or feature of a data object
+
+- Attributes can be represented by a certain *type* of data 
+    - Nominal
+    - Ordinal
+    - Binary 
+    - Numeric: quantitative 
+        - Interval-scaled
+        - Ratio-scaled 
+
+// Types of Attributes 
+
+- Nominal: categories, states, or labels / names 
+    - Hair_Color = { Auburn, Black, Blond, Brown, Red, }
+    - Marital Stats, Occupation, ID numbers, Zip codes 
+
+- Binary 
+    - This is a nominal attribute with only 2 states (0 and 1)
+        - Symmetric binary: both outcomes are equally important (heads and tails) 
+        - Asymmetric binary: outcomes are not equally important (medical test -> positive vs negative) 
+            - For assymetric, you want to assign the binary 1 to the most important outcome 
+
+- Ordinal
+    - Values have a meaningful order but the magnitude between successive values is not known 
+        - Size = { small, medium, large }, grades, army rankings 
+    - Its structured, but the distance between each item isnt specific
+
+// Numeric Attribute Types 
+
+- Interval-Scaled 
+    - Measured on a scale of equal-sized units 
+    - The values have order 
+        - Ex: temperature in Celsius or Fahrenheit, calendar dates 
+        - No true zero-point 
+        - You can tell which values are bigger/smaller, but you cant say something is twice as much as something else 
+
+- Ratio-Scaled 
+    - Inherent zero-point
+    - Values are an order of magnitude larger than the unit of measurement (10 awards is twice as many as 5 awards) 
+        - Ex: temperature in Kelvin, length, height, weight, monetary quantities 
+    - This one you can compare using twice as much. $0 = no money -> $20 is twice $10. 
+
+// Discrete vs. Continuous 
+
+- Discrete 
+    - Finite or countably infinite set of values 
+        - Ex: zip codes, profession, number of words in a doc 
+    - These are sometimes represented as int values 
+    - Note: binary attributes are a special case of discrete attributes 
+
+- Continuous 
+    - Has real numbers as attribute values 
+        - Ex: Temperature, height, or weight 
+    - In practicality, real values can only be measured and represented using a finite number of digits 
+    - Typically represented as a float 
+        - Ex: 5.5, 0.0001, -2,345.6789
+
+Not every Float is Continuous 
+    - A shoe size (9, 9.5, 10, 10.5) is NOT continuous 
+        - this is because theres no such shoe size as like a 9.102 
+- You can put shoe sizes in a dropdown list.
+
+// Basic Statistical Descriptions of Data 
+
+- Motivation: to better understand the data -> central tendency, variation, and spread 
+
+- Data disperion characteristics: median, max, min, quantities, outliers, variance, etc. 
+
+- Numerical diensions correspond to sorted intervals 
+    - Data dispersion: analyzed with multiple granularities of precision 
+    - Boxplot or quantile analysis on computed measures 
+
+- Dispersion analysis on computed measures 
+    - Folding measures into numerical dimensions 
+    - Boxplot or quantile analysis on the transformed cube 
+
+// Measuring the Central Tedency 
+
+- Mean (AVERAGE)
+    - Sum of the values, divide by the total number of values 
+
+- Median (EXACT MIDDLE)
+    - Middle value if odd number of values, or average of the two middle values otherwise
+
+- Mode 
+    - Value that occurs most frequently in the data 
+
+
+// Measuring Data Dispersion 
+
+- Quartiles, outliers, and boxplots 
+    - Quartiles: Q1 (25%), Median/Q2 (50%), Q3 (75%)
+    - Interquartile range: IQR = Q3 - Q1 
+    - Five number summary: min, Q1, median, Q3, MAX 
+    - Boxplot: ends of the box are the quartiles, median is marked, add whiskers and plot outliers individually 
+        - Outlier: usually a value higher/lower than 1.5 * IQR 
+
+- Variance and Standard deviation 
+    - Standard deviation measures how spread apart our data is 
+        - Small standard deviation means less spread out data 
+        - High standard deviation means more spread out distribution 
+    - Variance = (standard deviation)^2
+

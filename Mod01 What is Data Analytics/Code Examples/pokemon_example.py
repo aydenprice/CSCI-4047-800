@@ -7,3 +7,9 @@
 # pip install pandas
 # "as pd" makes "pd" a nickname for the package
 import pandas as pd
+
+# I want all pokemon from the CSV to a data frame
+
+df = pd.read_csv('AllPokemon.csv')
+print(df)
+

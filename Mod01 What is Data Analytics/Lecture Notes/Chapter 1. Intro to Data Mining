@@ -1,0 +1,46 @@
+-- Chapter 1. Introduction -- 
+
+// Why Data Mining?
+
+Terabytes to petabytes of data 
+
+We are drowning in data, but starving for knowledge 
+
+Major sources of abundant data:
+    - Business: web, e-commerce, transactions, stocks,
+    - Science: remote sensing, bioinformatics, scientific simulation
+    - Society and everyone: news, digital cameras, YouTube
+
+Given data (the pokemon), you can find what are the total number of types of them? What are the unique type 1s and 2s. 
+
+// Evolution of Database Tech
+
+1960s
+    - Data collection, database creation, IMS and network DBMS
+
+1970s
+    - Relational data model, DBMS implementation
+
+1980s
+    - RDBMS, advanced data models
+    - Application-oriented DBMS
+
+1990s:
+    - Data mining, warehousing, multimedia databases
+
+2000s 
+    - Stream data management and mining
+    - Data mining and its applications 
+    - Web tech (xml, data integration) 
+
+Ex: during a hurricane, walmart sold a lot of pop tarts. They would put the items together so they would likely buy the items together. 
+- Analyzed data, during these hurricanes these items were frequently sold together which produces outputs to increase sales 
+
+// What is Data Mining?
+
+- Extraction of interesting patterns or knowledge from huge amounts of data 
+
+Alternative names
+    - Knowledge discovery (mining) in databases (KDD), knowledge extraction, data/pattern analysis, data archeology, data dredging, info harvesting, business intelligence, etc. 
+
+/
